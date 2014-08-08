@@ -113,8 +113,6 @@
 
   </div>
 
-  <?php print render($page['legal']); ?>
-
   <?php print render($page['footer']); ?>
 
 </div>

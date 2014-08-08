@@ -3,7 +3,6 @@
    ========================================================================== */
 
 /* Corrects block display not defined in IE6/7/8/9 & FF3 */
-
 article,
 aside,
 details,
@@ -14,16 +13,12 @@ header,
 menu,
 nav,
 section,
-summary 
-{
-	display: block;
-}
+summary { display: block; }
 
 /* Corrects inline-block display not defined in IE6/7/8/9 & FF3 */
-
 audio,
 canvas,
-video 
+video
 {
 	display: inline-block;
 	*display: inline;
@@ -33,7 +28,7 @@ video
 /*	Prevents modern browsers from displaying 'audio' without controls.
 	Remove excess height in iOS5 devices */
 
-audio:not([controls]) 
+audio:not([controls])
 {
 	display: none;
 	height: 0;
@@ -42,11 +37,7 @@ audio:not([controls])
 /* Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
 	Known issue: no IE6 support */
 
-[hidden] 
-{
-	display: none;
-}
-
+[hidden] { display: none; }
 
 /* =============================================================================
    Base
@@ -94,20 +85,21 @@ audio:not([controls])
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
 
-html {
-  /*
+html
+{
+	/*
    * To use a 14px font size on the page, delete the 16px and 12px declarations.
    * To use a 12px font size on the page, delete the 16px and 14px declarations.
    */
-
-  /* Use a 14px base font size */
-  font-size: 87.5%; /* 16px x .875 = 14px */
-
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -ms-text-size-adjust: 100%; /* 2 */
-
-  /* Establish a vertical rhythm. */
-  line-height: 1.5em;
+	/* Use a 14px base font size */
+	font-size: 87.5%;
+	/* 16px x .875 = 14px */
+	-webkit-text-size-adjust: 100%;
+	/* 2 */
+	-ms-text-size-adjust: 100%;
+	/* 2 */
+	/* Establish a vertical rhythm. */
+	line-height: 1.5em;
 }
 
 /*
@@ -146,9 +138,9 @@ html {
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
 
-html, button, input, select, textarea 
+html, button, input, select, textarea
 {
-  /* The following font family declarations are based on the Microsoft core web
+	/* The following font family declarations are based on the Microsoft core web
    * fonts which are common fonts available on most computer systems. The DejaVu
    * and Nimbus Sans fonts are commonly available on Linux systems where the MS
    * fonts are less common. Tahoma and Helvetica are also widely available.
@@ -171,8 +163,7 @@ html, button, input, select, textarea
   font-family: "Courier New", "DejaVu Sans Mono", monospace;
 
    */
-
-  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
 
 /*
@@ -183,12 +174,11 @@ html, button, input, select, textarea
    PRIMARY PAGE ELEMENTS
    ========================================================================== */
 
-body 
+body
 {
 	background-color: #363636;
 	margin: 2%;
 	text-decoration: none;
-
 }
 
 article
@@ -198,10 +188,9 @@ article
 	border-radius: 5px;
 }
 
-	
 article aside
 {
-	background-color: #D8D8D8D;
+	background-color: #D8D8D8;
 	padding: 8px;
 	border-radius: 10px;
 	box-shadow: 10px 10px 5px #888888;
@@ -215,29 +204,24 @@ section
 	margin: 10px;
 }
 
+div.panel-col-first.panel-panel { padding: 0px 0px 0px 20px; }
+
+div.panel-col-last.panel-panel
+{
+	margin-bottom: 10px;
+	padding: 20px 0px 0px 0px;
+	height: 900px;
+	width: 450px;
+}
+
 div.contextual-links-region.panel-pane.pane-block.pane-block-5
 {
 	background-color: #F5F5F5;
-	padding: 5px 0;
-	margin: 5px 0px;
+	padding: 5px 10px;
+	margin: auto;
 	border-radius: 5px;
 	height: 350px;
-	width: 980px;
-}
-
-div.contextual-links-region.panel-pane.pane-block.pane-block-5 > * {
-	padding: 0 10px;
-}
-
-#legal
-{
-	height: 0px;
-	width: 960px;
-}
-
-footer#footer.region.region-footer
-{
-	width: 960px;
+	width: 930px;
 }
 
 footer
@@ -254,16 +238,16 @@ footer
    LINKS
    ========================================================================== */
 
-a:link 
+a:link
 {
 	color: #1B4AB2;
 	text-decoration: none;
 }
 
-a:visited 
+a:visited
 {
 	color: #B28009;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 a:hover
@@ -282,9 +266,7 @@ a:active
  * Addresses outline displayed oddly in Chrome
  */
 
-a:focus {
-  outline: thin dotted;
-}
+a:focus { outline: thin dotted; }
 
 /*
  * Improves readability when focused and also mouse hovered in all browsers
@@ -292,10 +274,7 @@ a:focus {
  */
 
 a:hover,
-a:active {
-  outline: 0;
-}
-
+a:active { outline: 0; }
 
 /* =============================================================================
    Typography
@@ -312,12 +291,11 @@ a:active {
  * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
  */
 
-
 /* =============================================================================
    HEADERS
    ========================================================================== */
 
-h1, h2, h3, h4, h5, h6 
+h1, h2, h3, h4, h5, h6
 {
 	color: #FFCC00;
 	font-family: Verdana, san-serif;
@@ -325,135 +303,142 @@ h1, h2, h3, h4, h5, h6
 	text-decoration: none;
 }
 
-h1 
+h1
 {
-  font-size: 3em;
-  /* Sets the line height to 2 units of vertical rhythm */
-  line-height: 1.5em; /* 3rem / 2em = 1.5em */
-  /* Sets 1 unit of vertical rhythm on the top and bottom margins. */
-  margin-top: 0.75em; /* 1.5rem / 2em = .75em */
-  margin-bottom: 0.75em;
+	font-size: 3em;
+	/* Sets the line height to 2 units of vertical rhythm */
+	line-height: 1.5em;
+	/* 3rem / 2em = 1.5em */
+	/* Sets 1 unit of vertical rhythm on the top and bottom margins. */
+	margin-top: 0.75em;
+	/* 1.5rem / 2em = .75em */
+	margin-bottom: 0.75em;
 }
 
-h2 
+h2
 {
-  font-size: 2.5em;
-  line-height: 2em; /* 3rem / 1.5em = 2em */
-  margin-top: 1em; /* 1.5rem / 1.5em = 1em */
-  margin-bottom: 1em;
+	font-size: 2.5em;
+	line-height: 2em;
+	/* 3rem / 1.5em = 2em */
+	margin-top: 1em;
+	/* 1.5rem / 1.5em = 1em */
+	margin-bottom: 1em;
 }
 
-h3 
+h3
 {
-  font-size: 1.9em;
-  line-height: 1.282em; /* 1.5rem / 1.17em = 1.282em */
-  margin-top: 1.282em;
-  margin-bottom: 1.282em;
+	font-size: 1.9em;
+	line-height: 1.282em;
+	/* 1.5rem / 1.17em = 1.282em */
+	margin-top: 1.282em;
+	margin-bottom: 1.282em;
 }
 
-h4 
+h4
 {
-  font-size: 1.75em;
-  line-height: 1.5em; /* 1.5rem / 1em = 1.5em */
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+	font-size: 1.75em;
+	line-height: 1.5em;
+	/* 1.5rem / 1em = 1.5em */
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
 }
 
-h4.left 
+h4.left
 {
-  font-size: 1.75em;
-  line-height: 1.5em; /* 1.5rem / 1em = 1.5em */
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  text-align: left;
+	font-size: 1.75em;
+	line-height: 1.5em;
+	/* 1.5rem / 1em = 1.5em */
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	text-align: left;
 }
 
-h5 
+h5
 {
-  font-size: 1.5em;
-  line-height: 1.807em; /* 1.5rem / 0.83em = 1.807em */
-  margin-top: 1.807em;
-  margin-bottom: 1.807em;
+	font-size: 1.5em;
+	line-height: 1.807em;
+	/* 1.5rem / 0.83em = 1.807em */
+	margin-top: 1.807em;
+	margin-bottom: 1.807em;
 }
 
-h6 
+h6
 {
-  font-size: 1.25em;
-  line-height: 2em; /* 1.5rem / .75em = 2em */
-  margin-top: 2em;
-  margin-bottom: 2em;
+	font-size: 1.25em;
+	line-height: 2em;
+	/* 1.5rem / .75em = 2em */
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
-h6.left 
+h6.left
 {
-  font-size: 1.25em;
-  line-height: 2em; /* 1.5rem / .75em = 2em */
-  margin-top: 2em;
-  margin-bottom: 2em;
-  display: inline;
-  text-align: left;
+	font-size: 1.25em;
+	line-height: 2em;
+	/* 1.5rem / .75em = 2em */
+	margin-top: 2em;
+	margin-bottom: 2em;
+	display: inline;
+	text-align: left;
 }
 
 /* Thematic break */
-hr 
+hr
 {
-  color: #363636;
-  height: 1px;
-  border: 1px solid #666;
-  padding-bottom: -1px;
-  margin: 1.5em 0;
+	color: #363636;
+	height: 1px;
+	border: 1px solid #666;
+	padding-bottom: -1px;
+	margin: 1.5em 0;
 }
 
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome
  */
 
-abbr[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
-  white-space: nowrap;
+abbr[title]
+{
+	border-bottom: 1px dotted;
+	cursor: help;
+	white-space: nowrap;
 }
 
 /*
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 */
 
-b, strong, .sfx 
-{
-  font-weight: bold;
-}
+b, strong, .sfx { font-weight: bold; }
 
-blockquote {
-  /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: 1.5em 30px;
+blockquote
+{
+	/* Sets 1 unit of vertical rhythm on the top and bottom margin. */
+	margin: 1.5em 30px;
 }
 
 /*
  * Addresses styling not present in S5, Chrome
  */
 
-dfn, .emphasis
-{
-	font-style: italic;
-}
+dfn, .emphasis { font-style: italic; }
 
 /*
  * Addresses styling not present in IE6/7/8/9
  */
 
-mark {
-  background: #ff0;
-  color: #000;
+mark
+{
+	background: #ff0;
+	color: #000;
 }
 
 /*
  * Addresses margins set differently in IE6/7
  */
 
-p, pre 
+p, pre
 {
-  /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: 1.5em 0;
+	/* Sets 1 unit of vertical rhythm on the top and bottom margin. */
+	margin: 1.5em 0;
 }
 
 /*
@@ -461,27 +446,27 @@ p, pre
  * en.wikipedia.org/wiki/User:Davidgothberg/Test59
  */
 
-pre, code, kbd, samp, tt, var 
+pre, code, kbd, samp, tt, var
 {
-  font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
-  _font-family: 'courier new', monospace;
-  font-size: 1em;
-  background-color: #E8E8E8;
-  color: #000000;
-  line-height: 1.5em;
-  padding: 3px;
-  overflow: auto;
-  text-decoration: none;
+	font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+	_font-family: 'courier new', monospace;
+	font-size: 1em;
+	background-color: #E8E8E8;
+	color: #000000;
+	line-height: 1.5em;
+	padding: 3px;
+	overflow: auto;
+	text-decoration: none;
 }
 
 /*
  * Improves readability of pre-formatted text in all browsers
  */
 
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+pre
+{
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }
 
 /*
@@ -490,23 +475,14 @@ pre {
  */
 
 /* 1 */
-
-q {
-  quotes: none;
-}
+q { quotes: none; }
 
 /* 2 */
-
 q:before,
-q:after {
-  content: '';
-  content: none;
-}
+q:after { content: none; }
 
 /* @todo Determine how big element affects vertical rhythm. */
-small {
-  font-size: 75%;
-}
+small { font-size: 75%; }
 
 /*
  * Prevents sub and sup affecting line-height in all browsers
@@ -514,21 +490,16 @@ small {
  */
 
 sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+sup
+{
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
 }
 
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
 
 /* =============================================================================
    Lists
@@ -542,30 +513,33 @@ dl,
 menu,
 ol,
 ul,
-.item-list ul /* Drupal override */ {
-  /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: 1.5em 0;
-}
-
-.item-list ul li { /* Drupal override */
-  margin: 0;
-}
-
-dd {
-  margin: 0 0 0 30px; /* LTR */
-}
-
-dt	
+.item-list ul /* Drupal override */
 {
-	font-weight: bold;
-}	
+	/* Sets 1 unit of vertical rhythm on the top and bottom margin. */
+	margin: 1.5em 0;
+}
 
+.item-list ul li
+{
+	/* Drupal override */
+	margin: 0;
+}
+
+dd
+{
+	margin: 0 0 0 30px;
+	/* LTR */
+}
+
+dt { font-weight: bold; }
 
 ul ul, ul ol,
 ol ul, ol ol,
 .item-list ul ul, .item-list ul ol,
-.item-list ol ul, .item-list ol ol {
-  margin: 0; /* Turn off margins on nested lists. */
+.item-list ol ul, .item-list ol ol
+{
+	margin: 0;
+	/* Turn off margins on nested lists. */
 }
 
 /*
@@ -575,20 +549,39 @@ ol ul, ol ol,
 menu,
 ol,
 ul,
-.item-list ul /* Drupal override */ {
-  padding: 0 0 0 30px; /* LTR */
+.item-list ul /* Drupal override */
+{
+	padding: 0 0 0 30px;
+	/* LTR */
 }
 
 /*
  * Corrects list images handled incorrectly in IE7
  */
 
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none;
+ul.inline
+{
+	/* List of links generated by theme_links() */
+	display: inline;
+	padding: 0;
 }
 
+ul.inline li
+{
+	display: inline;
+	list-style-type: none;
+	padding: 0 1em 0 0;
+	/* LTR */
+}
+
+nav ul,
+nav ol
+{
+	list-style: none;
+	list-style-image: none;
+}
+
+footer ul { list-style-type: none; }
 
 /* =============================================================================
    Embedded content
@@ -600,27 +593,26 @@ nav ol {
  *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
  */
 
-img {
-  border: 0; /* 1 */
-  -ms-interpolation-mode: bicubic; /* 2 */
-
-  /* vertical-align: bottom; */ /* Suppress the space beneath the baseline */
-
-  /* Responsive images */
-  /* @todo Add responsive embedded video. */
-  max-width: 100%;
-  height: auto;
-  padding: 5px;
+img
+{
+	border: 0;
+	/* 1 */
+	-ms-interpolation-mode: bicubic;
+	/* 2 */
+	/* vertical-align: bottom; */
+	/* Suppress the space beneath the baseline */
+	/* Responsive images */
+	/* @todo Add responsive embedded video. */
+	max-width: 100%;
+	height: auto;
+	padding: 5px;
 }
 
 /*
  * Corrects overflow displayed oddly in IE9
  */
 
-svg:not(:root) {
-  overflow: hidden;
-}
-
+svg:not(:root) { overflow: hidden; }
 
 /* =============================================================================
    Figures
@@ -630,13 +622,10 @@ svg:not(:root) {
  * Addresses margin not present in IE6/7/8/9, S5, O11
  */
 
-figure {
-  margin: 0;
-}
+figure { margin: 0; }
 
-
-figure figcaption 
-	{
+figure figcaption
+{
 	background-color: #DCDCDC;
 	color: #000000;
 	font-family: "Times New Roman", serif;
@@ -646,15 +635,13 @@ figure figcaption
 	text-align: center;
 	max-width: 400px;
 	border-radius: 3px;
-
-	}
+}
 
 figure.float_right
 {
 	float: right;
 	margin: 10px;
 }
-
 
 div.image
 {
@@ -670,18 +657,17 @@ div.image
  * Corrects margin displayed oddly in IE6/7
  */
 
-form {
-  margin: 0;
-}
+form { margin: 0; }
 
 /*
  * Define consistent border, margin, and padding
  */
 
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.5em 0.625em 1em;
+fieldset
+{
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.5em 0.625em 1em;
 }
 
 /*
@@ -690,11 +676,16 @@ fieldset {
  * 3. Corrects alignment displayed oddly in IE6/7
  */
 
-legend {
-  border: 0; /* 1 */
-  padding: 0;
-  white-space: normal; /* 2 */
-  *margin-left: -7px; /* 3 */ /* LTR */
+legend
+{
+	border: 0;
+	/* 1 */
+	padding: 0;
+	white-space: normal;
+	/* 2 */
+	margin-left: -7px;
+	/* 3 */
+	/* LTR */
 }
 
 /*
@@ -706,11 +697,16 @@ legend {
 button,
 input,
 select,
-textarea {
-  font-size: 100%; /* 1 */
-  margin: 0; /* 2 */
-  vertical-align: baseline; /* 3 */
-  *vertical-align: middle; /* 3 */
+textarea
+{
+	font-size: 100%;
+	/* 1 */
+	margin: 0;
+	/* 2 */
+	vertical-align: baseline;
+	/* 3 */
+	vertical-align: middle;
+	/* 3 */
 }
 
 /*
@@ -718,8 +714,10 @@ textarea {
  */
 
 button,
-input {
-  line-height: normal; /* 1 */
+input
+{
+	line-height: normal;
+	/* 1 */
 }
 
 /*
@@ -732,10 +730,14 @@ input {
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
-  cursor: pointer; /* 1 */
-  -webkit-appearance: button; /* 2 */
-  *overflow: visible;  /* 3 */
+input[type="submit"]
+{
+	cursor: pointer;
+	/* 1 */
+	-webkit-appearance: button;
+	/* 2 */
+	overflow: visible;
+	/* 3 */
 }
 
 /*
@@ -743,9 +745,7 @@ input[type="submit"] {
  */
 
 button[disabled],
-input[disabled] {
-  cursor: default;
-}
+input[disabled] { cursor: default; }
 
 /*
  * 1. Addresses box sizing set to content-box in IE8/9
@@ -755,13 +755,18 @@ input[disabled] {
  */
 
 input[type="checkbox"],
-input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-  *height: 13px; /* 3 */
-  *width: 13px; /* 3 */
+input[type="radio"]
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/* 1 */
+	padding: 0;
+	/* 2 */
+	height: 13px;
+	/* 3 */
+	width: 13px;
+	/* 3 */
 }
 
 /*
@@ -769,11 +774,14 @@ input[type="radio"] {
  * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
  */
 
-input[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  -webkit-box-sizing: content-box; /* 2 */
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+input[type="search"]
+{
+	-webkit-appearance: textfield;
+	/* 1 */
+	-webkit-box-sizing: content-box;
+	/* 2 */
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
 }
 
 /*
@@ -781,9 +789,7 @@ input[type="search"] {
  */
 
 input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-}
+input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
 
 /*
  * Removes inner padding and border in FF3+
@@ -791,9 +797,10 @@ input[type="search"]::-webkit-search-cancel-button {
  */
 
 button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
+input::-moz-focus-inner
+{
+	border: 0;
+	padding: 0;
 }
 
 /*
@@ -801,11 +808,13 @@ input::-moz-focus-inner {
  * 2. Improves readability and alignment in all browsers
  */
 
-textarea {
-  overflow: auto; /* 1 */
-  vertical-align: top; /* 2 */
+textarea
+{
+	overflow: auto;
+	/* 1 */
+	vertical-align: top;
+	/* 2 */
 }
-
 
 /* =============================================================================
    Tables
@@ -815,13 +824,14 @@ textarea {
  * Remove most spacing between table cells
  */
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  /* Add vertical rhythm margins. */
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	/* Add vertical rhythm margins. */
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
 }
 
 /*
@@ -829,12 +839,12 @@ table {
  * forms, so we override this default CSS. (We set it back in forms.css.)
  */
 
-th {
-  text-align: left; /* LTR */
-  padding: 0;
-  border-bottom: none;
+th
+{
+	text-align: left;
+	/* LTR */
+	padding: 0;
+	border-bottom: none;
 }
 
-tbody {
-  border-top: none;
-}
+tbody { border-top: none; }
