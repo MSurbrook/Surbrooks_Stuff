@@ -177,33 +177,47 @@ html, button, input, select, textarea
 body
 {
 	background-color: #363636;
+	color: #000000;
+	font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+	font-size: medium;
 	margin: 2%;
 	text-decoration: none;
 }
 
+.stuff_wrapper
+{
+	width: 90%;
+	margin: 0 auto;
+}
+	
 article
 {
-	background-color: #F5F5F5;
+	background-color: #fafafa;
+	color: #000000;
+	font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+	font-size: medium;
 	padding: 5px;
 	border-radius: 5px;
 }
 
-article aside
+aside
 {
-	background-color: #D8D8D8;
+	background-color: #e7e7e7;
+	color: #000000;
+	font-family:  'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;;
+	font-size: medium;
 	padding: 8px;
 	border-radius: 10px;
-	box-shadow: 10px 10px 5px #888888;
-}
-
-section
-{
-	background-color: #B5B5B5;
+	border-color: #000000;
 	border-radius: 10px;
-	padding: 10px;
+	border-style: outset;
+	border-width: 1px;
+	float: right;
 	margin: 10px;
+	padding: 5px;
+	width: 300px;
 }
-
+	
 div.panel-col-first.panel-panel { padding: 0px 0px 0px 20px; }
 
 div.panel-col-last.panel-panel
@@ -240,25 +254,25 @@ footer
 
 a:link
 {
-	color: #1B4AB2;
+	color: #0000FF;
 	text-decoration: none;
 }
 
 a:visited
 {
-	color: #B28009;
+	color: #4D004D;
 	text-decoration: none;
 }
 
 a:hover
 {
-	color: #598DFF;
-	text-decoration: none;
+	color: #B39700;
+	text-decoration: underline;
 }
 
 a:active
 {
-	color: #407BFF;
+	color: #ffd700;
 	text-decoration: none;
 }
 
@@ -297,9 +311,8 @@ a:active { outline: 0; }
 
 h1, h2, h3, h4, h5, h6
 {
-	color: #FFCC00;
-	font-family: Verdana, san-serif;
-	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #4f4738;
 	text-decoration: none;
 }
 
@@ -315,6 +328,12 @@ h1
 	margin-bottom: 0.75em;
 }
 
+#page-title
+{
+	color: #ffd700;
+	text-align: center;
+}
+
 h2
 {
 	font-size: 2.5em;
@@ -323,6 +342,16 @@ h2
 	margin-top: 1em;
 	/* 1.5rem / 1.5em = 1em */
 	margin-bottom: 1em;
+}
+
+.stuff_wrapper h1, h2, h3, h4, h5, h6
+{
+	text-align: center;
+}
+
+.contextual-links-region h2
+{
+		color: #ffd700;
 }
 
 h3
@@ -341,6 +370,11 @@ h4
 	/* 1.5rem / 1em = 1.5em */
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
+}
+
+#block-block-4 h4
+{
+		color: #ffd700;
 }
 
 h4.left
@@ -385,7 +419,7 @@ h6.left
 /* Thematic break */
 hr
 {
-	color: #363636;
+	color: #14156A;
 	height: 1px;
 	border: 1px solid #666;
 	padding-bottom: -1px;
@@ -408,6 +442,7 @@ abbr[title]
 */
 
 b, strong, .sfx { font-weight: bold; }
+i, .emphasis {font-style: italic;}
 
 blockquote
 {
@@ -435,10 +470,46 @@ mark
  * Addresses margins set differently in IE6/7
  */
 
+/* =============================================================================
+   TEXT APPEARANCE
+   ========================================================================== */
+
+.center
+{
+	text-align: center;
+}
+
 p, pre
 {
 	/* Sets 1 unit of vertical rhythm on the top and bottom margin. */
 	margin: 1.5em 0;
+}
+
+p
+{
+	color: #000000;
+	font-family: Arial, sans-serif;
+	font-size: medium;
+	text-align: justify;
+	text-indent: 3%;
+}
+	
+p.small_caps
+{
+	color: #82745b;
+	font-size: 125%;
+	font-variant: small-caps;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 3%;
+}
+
+
+.small
+{
+	color: #000000;
+	font-family: Arial, sans-serif;
+	font-size: small;
 }
 
 /*
@@ -448,15 +519,14 @@ p, pre
 
 pre, code, kbd, samp, tt, var
 {
-	font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
-	_font-family: 'courier new', monospace;
-	font-size: 1em;
-	background-color: #E8E8E8;
+	background-color: #ededed;
 	color: #000000;
-	line-height: 1.5em;
+	font-family: "Courier New", Courier, monospace;
+	font-size: small;
 	padding: 3px;
 	overflow: auto;
 	text-decoration: none;
+	border-radius: 3px;
 }
 
 /*
@@ -515,9 +585,14 @@ ol,
 ul,
 .item-list ul /* Drupal override */
 {
+	color: #000000;
+	font-family: Arial, sans-serif;
+	font-size: medium;
 	/* Sets 1 unit of vertical rhythm on the top and bottom margin. */
 	margin: 1.5em 0;
 }
+
+.none {list-style-type: none;}
 
 .item-list ul li
 {
@@ -622,31 +697,23 @@ svg:not(:root) { overflow: hidden; }
  * Addresses margin not present in IE6/7/8/9, S5, O11
  */
 
-figure { margin: 0; }
-
-figure figcaption
+figure
 {
-	background-color: #DCDCDC;
+	float: right;
+	margin: 10px;
+}
+
+figcaption
+{
+	background-color: #ededed;
 	color: #000000;
-	font-family: "Times New Roman", serif;
+	font-family: Arial, sans-serif;
 	font-size: small;
 	font-style: italic;
 	margin: 0 auto;
 	text-align: center;
 	max-width: 400px;
 	border-radius: 3px;
-}
-
-figure.float_right
-{
-	float: right;
-	margin: 10px;
-}
-
-div.image
-{
-	float: right;
-	margin: 10px;
 }
 
 /* =============================================================================
@@ -826,9 +893,12 @@ textarea
 
 table
 {
-	border-collapse: collapse;
+	border: thin solid #000000;
+	caption-side: top;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: top;
 	border-spacing: 0;
-	width: 100%;
 	/* Add vertical rhythm margins. */
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
@@ -841,10 +911,24 @@ table
 
 th
 {
-	text-align: left;
-	/* LTR */
-	padding: 0;
-	border-bottom: none;
+	background-color: #363636;
+	border: thin dotted #787878;
+	color: #FFFAFA;
+	font-family: Verdana, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
 }
+
+td
+	{
+	background-color: #ededed;
+	border: thin dotted #787878;
+	color: #000000;
+	font-family: Arial, sans-serif;
+	padding: 5px;
+	text-align: left;
+	}
 
 tbody { border-top: none; }
